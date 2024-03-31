@@ -14,23 +14,23 @@ Declarative Pipeline is a more recent feature of Jenkins Pipeline which: provide
 Many of the individual syntactical components (or "steps") written into a Jenkinsfile, however, are common to both Declarative and Scripted Pipeline. 
 
 # Declarative pipeline
-pipeline{
-    agent any
-    stages{
-        stage("code build"){
-            steps{
-                echo "code build"
-            }
-        }
-                stage("code push"){
-            steps{
-                echo "code push"
-            }
-        }
-                stage("code deploy"){
-            steps{
-                echo "code deploy"
-            }
-        }
-    }
+pipeline{<br>
+    agent any<br>
+    stages{<br>
+        <br>stage("code build"){
+            <br>steps{
+                <br>echo "code build"
+            <br>}
+        <br>}
+            <br>    stage("code push"){
+            <br>steps{
+                <br>echo "code push"
+            <br>}
+        <br>}
+            <br>    stage("code deploy"){
+            <br>steps{
+                <br>echo "code deploy"
+            <br>}
+        <br>}
+    <br>}
 }
